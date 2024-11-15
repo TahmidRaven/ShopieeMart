@@ -8,6 +8,8 @@ import Signin from './pages/Signin';
 import SignUp from './pages/SignUp';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import SignUp_admin from './pages/SignUp_admin';
+import SignIn_admin from './pages/SignIn_admin';
  
  
 export default function App() {
@@ -23,6 +25,11 @@ export default function App() {
       <Route path="/profile" element={<Profile />} />
       <Route path="/signin" element={<Signin />} />
       <Route path="/signup" element={<SignUp />} />
+      <Route path="/signup_admin" element={<SignUp_admin />} />
+      <Route path="/signin_admin" element={<SignIn_admin />} />
+
+
+      {/* <Route path="/signup_seller" element={<SignUp_seller />} /> */}
     </Routes>
 
     <Footer />
