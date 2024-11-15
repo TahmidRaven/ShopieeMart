@@ -13,3 +13,7 @@ npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-brands-sv
 npm i express 
 
 npm i nodemon
+
+npm i mongoose
+
+npm i dotenv
