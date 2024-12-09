@@ -51,7 +51,7 @@ export default function SignIn() {
         {/* Footer */}
         <div className="flex justify-center gap-2 mt-6">
           <p className="text-white text-sm">Don't have an account?</p>
-          <Link to="/sign-up">
+          <Link to="/signup">
             <span className="text-lavender-200 text-sm font-semibold hover:underline">
               Sign Up
             </span>
