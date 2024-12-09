@@ -33,7 +33,7 @@ export default function SignUpAdmin() {
       }
       setLoading(false);
       setError(null);
-      navigate('/admin-dashboard'); // Redirect to an admin-specific page
+      navigate('/signin_admin'); // Redirect to an admin-specific page
     } catch (error) {
       setLoading(false);
       setError(error.message);
@@ -110,7 +110,7 @@ export default function SignUpAdmin() {
         {/* Footer */}
         <div className="flex justify-center gap-2 mt-6">
           <p className="text-white text-sm">Already have an account?</p>
-          <Link to="/admin-login">
+          <Link to="/signin_admin">
             <span className="text-lavender-200 text-sm font-semibold hover:underline">
               Log In
             </span>
