@@ -9,6 +9,7 @@ npm i --save @fortawesome/react-fontawesome@latest
 
 npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome
 
+ npm install vite 
 
 npm i express 
 
