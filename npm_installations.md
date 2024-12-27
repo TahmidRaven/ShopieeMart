@@ -19,10 +19,10 @@ npm i mongoose
 
 npm i dotenv
 
-
-No need to instal :
+ 
 
 npm install @mui/material @emotion/react @emotion/styled
 npm install @mui/icons-material
 
 npm install axios
+npm install cors
