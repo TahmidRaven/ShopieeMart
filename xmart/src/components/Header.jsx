@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header className="bg-gradient-to-r from-indigo-800 via-indigo-400 to-indigo-900 shadow-md sticky top-0 z-50">
-      <div className="flex justify-between items-center max-w-6xl mx-auto p-4">
+      <div className="flex justify-between items-center max-w-6xl mx-auto p-4"> 
         {/* Logo */}
         <Link to="/">
           <h1 className="font-bold text-2xl sm:text-3xl text-white flex items-center">
@@ -32,15 +32,15 @@ export default function Header() {
           <ul className="flex gap-6">
             <Link to="/">
               <li className="text-white hover:text-orange-300 hidden sm:inline cursor-pointer transition-colors">
-                <FontAwesomeIcon icon={faHouseChimneyWindow} className="text-lg" />  
-                Home
+                <FontAwesomeIcon icon={faHouseChimneyWindow}  className="text-lg mr-2" />  
+                 Home
               </li>
             </Link>
             <Link to="/about">
               <li className="text-white hover:text-orange-300 hidden sm:inline cursor-pointer transition-colors">
-                <FontAwesomeIcon icon={faGhost} className="text-lg" />  
+                <FontAwesomeIcon icon={faGhost}  className="text-lg mr-2" />  
 
-                About
+                 About
               </li>
             </Link>
           </ul>
@@ -55,7 +55,7 @@ export default function Header() {
             <FaSearch className="text-white text-xl" />
           </form>
 
-          {/* Account Dropdown */}
+          {/* Account Dropdown */} 
           <div
             className="relative text-white cursor-pointer"
             onClick={toggleDropdown}
