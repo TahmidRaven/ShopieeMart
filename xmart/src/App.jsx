@@ -20,6 +20,9 @@ import SignIn_supplier from './pages/SignIn_supplier';
 import SignUpSupplier from './pages/SignUp_supplier'; 
 
 import DashboardAdmin from './pages/dashboard_admin';
+import DashboardAdminMain from './pages/dashboard_admin_main';
+import DashboardSeller from './pages/dashboard_seller';
+import Products from './pages/products';
 
 
  
@@ -51,7 +54,9 @@ export default function App() {
 
       <Route path="/dashboard_admin" element={<DashboardAdmin />} />
 
-      {/* <Route path="/dashboard_admin" element={<DashboardAdmin  />} /> */}
+      <Route path="/dashboard_admin_main" element={<DashboardAdminMain />} />
+      <Route path="/dashboard_seller" element={<DashboardSeller />} />  
+      <Route path="/products" element={<Products />} />
 
 
 

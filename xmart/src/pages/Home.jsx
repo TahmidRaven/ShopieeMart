@@ -14,7 +14,7 @@ export default function Home() {
           <p className="text-lg sm:text-xl mb-6">
             Your one-stop online marketplace for all your shopping needs.
           </p>
-          <Link to="/shop" className="bg-cyan-400 text-white py-2 px-6 rounded-lg hover:bg-cyan-500 transition-colors text-lg">
+          <Link to="/signin" className="bg-cyan-400 text-white py-2 px-6 rounded-lg hover:bg-cyan-500 transition-colors text-lg">
             Shop Now
           </Link>
         </div>
@@ -112,7 +112,7 @@ export default function Home() {
           <p className="text-lg mb-6">
             Start selling your products on ShopieeMart and reach millions of customers worldwide.
           </p>
-          <Link to="/signup" className="bg-cyan-400 text-white py-3 px-8 rounded-lg text-lg hover:bg-cyan-500 transition-colors">
+          <Link to="/signup_seller" className="bg-cyan-400 text-white py-3 px-8 rounded-lg text-lg hover:bg-cyan-500 transition-colors">
             Sign Up to Sell
           </Link>
         </div>
