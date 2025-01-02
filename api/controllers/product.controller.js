@@ -1,9 +1,17 @@
- 
 import Product from '../models/product.model.js';
+import User from '../models/user.model.js'; // Import User model
 
 // Create a new product
 export const createProduct = async (req, res, next) => {
   try {
+    const { seller } = req.body;
+
+    // Check if seller ID exists
+    const sellerExists = await User.findById(seller);
+    if (!sellerExists) {
+      return res.status(400).json({ success: false, message: 'Invalid seller ID' });
+    }
+
     const product = new Product(req.body);
     await product.save();
     res.status(201).json({ success: true, data: product });
