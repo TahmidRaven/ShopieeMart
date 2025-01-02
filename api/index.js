@@ -11,6 +11,10 @@ import dashboardAdminRouter from './routes/dashboard_admin.route.js';
 import productRouter from './routes/product.route.js';
 import deliveryRouter from './routes/delivery.route.js';
 import cookieParser from 'cookie-parser';
+import cartRouter from './routes/cart.route.js';  
+
+  
+
 
 dotenv.config();
 // Connect to MongoDB
@@ -46,8 +50,12 @@ app.use('/api/auth_supplier', authSupplierRouter);
 app.use('/api/dashboard_admin', dashboardAdminRouter);
 
 app.use('/api/products', productRouter);
-app.use('/api/delivery', deliveryRouter); 
+app.use('/api/delivery', deliveryRouter);
+app.use('/api/cart', cartRouter);  
+ 
 
+ 
+ 
 // Global error handler
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;

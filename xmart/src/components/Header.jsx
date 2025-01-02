@@ -22,7 +22,7 @@ export default function Header() {
     <header className="bg-gradient-to-r from-indigo-800 via-indigo-400 to-indigo-900 shadow-md sticky top-0 z-50">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-4"> 
         {/* Logo */}
-        <Link to="/shop">
+        <Link to="/mart">
           <h1 className="font-bold text-2xl sm:text-3xl text-white flex items-center ml-0">
             <img 
               src="src/assets/shopiee_icon.png" 

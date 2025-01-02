@@ -24,7 +24,10 @@ import DashboardAdminMain from './pages/dashboard_admin_main';
 import DashboardSeller from './pages/dashboard_seller';
 import Products from './pages/products';
 import PrivateRoute from './components/PrivateRoute';
-import Shop from './pages/shop';
+import Mart from './pages/mart';
+ 
+ 
+ 
 
 
 
@@ -62,7 +65,8 @@ export default function App() {
       <Route path="/dashboard_admin_main" element={<DashboardAdminMain />} />
       <Route path="/dashboard_seller" element={<DashboardSeller />} />  
       <Route path="/products" element={<Products />} />
-      <Route path="/shop" element={<Shop />} />
+      <Route path="/mart" element={<Mart />} /> 
+
 
 
 
