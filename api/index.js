@@ -12,7 +12,6 @@ import productRouter from './routes/product.route.js';
 import deliveryRouter from './routes/delivery.route.js';
 
 dotenv.config();
-
 // Connect to MongoDB
 mongoose
   .connect(process.env.MONGO)
