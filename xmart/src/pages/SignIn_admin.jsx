@@ -42,7 +42,7 @@ export default function SignIn_admin() {
         return;
       }
       dispatch(signInSuccess(data));
-      navigate('/');
+      navigate('/dashboard_admin_main');
     } catch (error) {
       console.error('handleSubmit error:', error); // Log any errors
       dispatch(signInFailure(error.message));

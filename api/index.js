@@ -10,6 +10,7 @@ import authSupplierRouter from './routes/auth_supplier.route.js';
 import dashboardAdminRouter from './routes/dashboard_admin.route.js';
 import productRouter from './routes/product.route.js';
 import deliveryRouter from './routes/delivery.route.js';
+import cookieParser from 'cookie-parser';
 
 dotenv.config();
 // Connect to MongoDB
@@ -35,7 +36,7 @@ app.use(
 
 // Middleware to parse JSON
 app.use(express.json());
-
+app.use(cookieParser());
 // Routes
 app.use('/api/user', userRouter);
 app.use('/api/auth', authRouter);

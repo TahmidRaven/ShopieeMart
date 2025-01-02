@@ -4,7 +4,7 @@ import React from 'react'
 import Home from './pages/Home';
 import About from './pages/About';
 import Profile from './pages/Profile';
-import SignIn from './pages/Signin';
+import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -23,6 +23,9 @@ import DashboardAdmin from './pages/dashboard_admin';
 import DashboardAdminMain from './pages/dashboard_admin_main';
 import DashboardSeller from './pages/dashboard_seller';
 import Products from './pages/products';
+import PrivateRoute from './components/PrivateRoute';
+import Shop from './pages/shop';
+
 
 
  
@@ -37,7 +40,9 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/profile" element={<Profile />} />
+      <Route element={<PrivateRoute />}>
+          <Route path='/profile' element={<Profile />} />
+      </Route>
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/signup_admin" element={<SignUp_admin />} />
@@ -57,6 +62,7 @@ export default function App() {
       <Route path="/dashboard_admin_main" element={<DashboardAdminMain />} />
       <Route path="/dashboard_seller" element={<DashboardSeller />} />  
       <Route path="/products" element={<Products />} />
+      <Route path="/shop" element={<Shop />} />
 
 
 

@@ -42,7 +42,7 @@ export default function SignIn_seller() {
         return;
       }
       dispatch(signInSuccess(data));
-      navigate('/');
+      navigate('/dashboard_seller');
     } catch (error) {
       console.error('handleSubmit error:', error); // Log any errors
       dispatch(signInFailure(error.message));

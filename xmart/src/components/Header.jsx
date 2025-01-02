@@ -3,8 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserSecret, faHouseChimneyWindow, faGhost, faUserPlus } from '@fortawesome/free-solid-svg-icons';  // Importing the correct icon
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 export default function Header() {
+  const { currentUser } = useSelector((state) => state.user);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [signupDropdownOpen, setSignupDropdownOpen] = useState(false); // State for signup dropdown
 
@@ -20,7 +22,7 @@ export default function Header() {
     <header className="bg-gradient-to-r from-indigo-800 via-indigo-400 to-indigo-900 shadow-md sticky top-0 z-50">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-4"> 
         {/* Logo */}
-        <Link to="/">
+        <Link to="/shop">
           <h1 className="font-bold text-2xl sm:text-3xl text-white flex items-center ml-0">
             <img 
               src="src/assets/shopiee_icon.png" 
@@ -71,6 +73,13 @@ export default function Header() {
                 <span className="hidden sm:inline">About</span>
               </li>
             </Link>
+            {/* <Link to="/profile">
+              {currentUser ? (
+                <img className="rounded-full h-7 w-7 object-cover" src={currentUser.avatar} alt="profile" />
+              ) : (
+                <li className="text-slate-700 hover:underline">Sign in</li>
+              )}
+            </Link> */}
           </ul>
 
           {/* Search Bar */}
@@ -89,7 +98,7 @@ export default function Header() {
             onClick={toggleDropdown}
           >
             <span className="hover:text-orange-300 transition-colors flex items-center gap-2">
-              <FontAwesomeIcon icon={faUserSecret} className="text-lg" />  
+              <FontAwesomeIcon icon={faUserSecret} className="text-lg" />
               <span className="hidden sm:inline">Account</span>
             </span>
 
